@@ -447,6 +447,9 @@ video {
 .navbarinner i{
   display: none;
 }
+.navbarinner input{
+  display: none;
+}
 @media screen and (max-width: 768px) {
   * {
     padding: 0%;

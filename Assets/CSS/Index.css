@@ -9,6 +9,9 @@ body {
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 .bgimg {
   width: 100%;
   height: 100%;
@@ -21,12 +24,17 @@ body {
 }
 .navbar {
   width: 100%;
-  height: 15%;
+  height: 100px;
   color: whitesmoke;
+  background-color: rgb(0, 0, 0);
   font-weight: 500;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
 }
 .navbarinner {
   width: 80%;
@@ -52,6 +60,10 @@ body {
   list-style: none;
   font-size: 15px;
 }
+.navbarinner ul li a{
+  color: white;
+  text-decoration: none;
+}
 .name {
   width: 100%;
   height: 85%;
@@ -61,6 +73,7 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 50px;
+  padding-top: 100px;
 }
 .head {
   width: 100%;
@@ -70,7 +83,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 100px;
 }
+
 .About {
   width: 100%;
   height: 30%;
@@ -85,6 +100,7 @@ body {
   justify-content: space-between;
   gap: 30px;
   line-height: 30px;
+  margin-top: 50px;
 }
 .Aboutpara p {
   color: rgb(61, 61, 61);
@@ -153,6 +169,7 @@ video {
   height: 80%;
   background-color: black;
   color: white;
+  padding-top: 100px;
 }
 .resumeinner {
   width: 100%;
@@ -206,6 +223,7 @@ video {
   align-items: center;
   justify-content: center;
   font-size: 25px;
+  padding-top: 100px;
 }
 .buttons {
   width: 100%;
@@ -279,6 +297,7 @@ video {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 100px;
 }
 .testimonial1 {
   width: 80%;
@@ -356,6 +375,7 @@ video {
   width: 100%;
   height: 100%;
   background-color: rgb(241, 241, 241);
+  padding-top: 100px;
 }
 .contactheading {
   width: 100%;
@@ -422,6 +442,10 @@ video {
   background-color: white;
   margin-top: 20px;
 }
+.messages button:hover{
+  background-color: rgb(117, 116, 116);
+  color: white;
+}
 .footer {
   width: 100%;
   height: 40%;
@@ -479,7 +503,7 @@ video {
   .navbar {
     width: 100%;
     height: 15%;
-    color: whitesmoke;
+    color: rgb(255, 255, 255);
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -521,11 +545,14 @@ video {
   .navbarinner h1 {
     font-size: 50px;
     font-weight: 500;
-    color: whitesmoke;
+    color: rgb(255, 255, 255);
   }
   .navbarinner ul li {
     list-style: none;
     font-size: 25px;
+  }
+  .navbarinner ul li a{
+    color: black;
   }
   .name {
     width: 100%;
@@ -546,6 +573,7 @@ video {
     align-items: center;
     justify-content: center;
     padding: 20px;
+  padding-top: 100px;
   }
   .About {
     width: auto;
@@ -563,6 +591,7 @@ video {
     gap: 30px;
     line-height: 30px;
     flex-direction: column;
+    background-color: yellow;
   }
   .Aboutpara p {
     color: rgb(61, 61, 61);
@@ -897,6 +926,7 @@ video {
     padding: 0px 0px;
     font-size: 20px;
   }
+
   .messages {
     width: 100%;
     height: 100%;
@@ -906,27 +936,40 @@ video {
     width: 100%;
     height: 100%;
     outline: none;
-    border: none;
+    border: 1px solid rgb(0, 0, 0);
     font-size: 20px;
-    border-bottom: 1px solid rgb(117, 116, 116);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    margin: 20px 0px 5px 0px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
   }
   .messages textarea {
     width: 100%;
     height: 100%;
     font-size: 20px;
     outline: none;
-    border: none;
-    border-bottom: 0.5px solid rgb(117, 116, 116);
-    margin-top: 0px;
+    border: 1px solid rgb(0, 0, 0); 
+    border-bottom: 0.5px solid rgb(0, 0, 0);
+    margin-top: 18px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
   }
   .messages button {
     width: 150px;
     height: 35px;
-    border-radius: 100px;
+    border-radius: 0px;
     color: rgb(63, 63, 63);
-    border: 1px solid rgb(178, 175, 175);
+    border: 1px solid rgb(0, 0, 0);
     background-color: white;
     margin-top: 20px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin-left: 20px;
+  }
+  .messages button:hover{
+    background-color: rgb(106, 104, 104);
+    color: white;
+    border-color: white;
   }
   .footer {
     width: auto;

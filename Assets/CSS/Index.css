@@ -987,10 +987,19 @@ video {
     line-height: 50px;
     padding: 20px;
   }
+  .footer1{
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+  }
   .footer p {
     font-size: 12px;
     word-spacing: 7px;
     color: rgb(188, 188, 188);
+    text-align: center;
   }
   .footer h4 {
     font-size: 16px;

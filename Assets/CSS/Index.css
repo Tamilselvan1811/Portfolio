@@ -9,7 +9,7 @@ body {
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 .bgimg {
@@ -60,7 +60,7 @@ html{
   list-style: none;
   font-size: 15px;
 }
-.navbarinner ul li a{
+.navbarinner ul li a {
   color: white;
   text-decoration: none;
 }
@@ -421,7 +421,7 @@ video {
   font-size: 20px;
   border-bottom: 1px solid rgb(117, 116, 116);
 }
-.navbarinner input{
+.navbarinner input {
   display: none;
 }
 .messages textarea {
@@ -442,7 +442,7 @@ video {
   background-color: white;
   margin-top: 20px;
 }
-.messages button:hover{
+.messages button:hover {
   background-color: rgb(117, 116, 116);
   color: white;
 }
@@ -468,12 +468,13 @@ video {
   color: rgb(198, 197, 197);
   font-weight: normal;
 }
-.navbarinner i{
+.navbarinner i {
   display: none;
 }
-.navbarinner input{
+.navbarinner input {
   display: none;
 }
+
 @media screen and (max-width: 768px) {
   * {
     padding: 0%;
@@ -496,7 +497,7 @@ video {
     position: relative;
     overflow: hidden;
   }
-  .navbarinner i{
+  .navbarinner i {
     display: block;
     font-size: 25px;
   }
@@ -508,7 +509,7 @@ video {
     display: flex;
     align-items: center;
     justify-content: center;
-    display:block;
+    display: block;
   }
   .navbarinner {
     width: 100%;
@@ -517,29 +518,29 @@ video {
     align-items: center;
     justify-content: space-between;
     position: relative;
-    background-color:rgb(0, 0, 0,0.0);
+    background-color: rgb(0, 0, 0, 0);
     padding: 20px;
     z-index: 9999;
   }
-  .navbarinner input{
+  .navbarinner input {
     display: none;
   }
   .navbarinner ul {
     width: 100%;
-    height:300px;
+    height: 300px;
     padding: 20px;
     display: flex;
     align-items: flex-start;
-    justify-content:space-between;
+    justify-content: space-between;
     position: absolute;
-    left:-100%;
+    left: -100%;
     top: 100px;
-    background-color:rgb(255, 255, 255,0.7);
+    background-color: rgb(255, 255, 255, 0.7);
     flex-direction: column;
     color: rgb(12, 12, 12);
     transition: 1s;
   }
-  .navbarinner #check:checked~ul{
+  .navbarinner #check:checked ~ ul {
     left: 0;
   }
   .navbarinner h1 {
@@ -551,7 +552,7 @@ video {
     list-style: none;
     font-size: 25px;
   }
-  .navbarinner ul li a{
+  .navbarinner ul li a {
     color: black;
   }
   .name {
@@ -572,8 +573,8 @@ video {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-  padding-top: 100px;
+    padding: 20px 20px 0px 20px;
+    padding-top: 120px;
   }
   .About {
     width: auto;
@@ -591,7 +592,6 @@ video {
     gap: 30px;
     line-height: 30px;
     flex-direction: column;
-    background-color: yellow;
   }
   .Aboutpara p {
     color: rgb(61, 61, 61);
@@ -663,6 +663,7 @@ video {
     background-color: black;
     color: white;
     padding: 20px;
+    padding-top: 120px;
   }
   .resumeinner {
     width: 100%;
@@ -718,6 +719,7 @@ video {
     justify-content: center;
     font-size: 25px;
     padding: 20px;
+    padding-top: 120px;
   }
   .buttons {
     width: auto;
@@ -797,6 +799,7 @@ video {
     align-items: center;
     justify-content: center;
     padding: 20px;
+    padding-top: 120px;
   }
   .testimonial1 {
     width: 100%;
@@ -891,6 +894,7 @@ video {
     height: auto;
     background-color: rgb(241, 241, 241);
     padding: 20px;
+    padding-top: 120px;
   }
   .contactheading {
     width: 100%;
@@ -930,7 +934,7 @@ video {
   .messages {
     width: 100%;
     height: 100%;
-    margin-top: 20px;
+    margin-top: 0px;
   }
   .messages input {
     width: 100%;
@@ -948,7 +952,7 @@ video {
     height: 100%;
     font-size: 20px;
     outline: none;
-    border: 1px solid rgb(0, 0, 0); 
+    border: 1px solid rgb(0, 0, 0);
     border-bottom: 0.5px solid rgb(0, 0, 0);
     margin-top: 18px;
     border-bottom-left-radius: 50px;
@@ -966,7 +970,7 @@ video {
     border-top-right-radius: 50px;
     margin-left: 20px;
   }
-  .messages button:hover{
+  .messages button:hover {
     background-color: rgb(106, 104, 104);
     color: white;
     border-color: white;

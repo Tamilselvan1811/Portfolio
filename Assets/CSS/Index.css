@@ -7,26 +7,30 @@ body {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
-  font-family: "Poppins", sans-serif;
+  font-family: "Playfair Display", serif;
+}
+html ::-webkit-scrollbar{
+  display: none;
 }
 html {
   scroll-behavior: smooth;
 }
 .bgimg {
   width: 100%;
-  height: 100%;
-  background-image: url(../Images/bg.jpg);
+  height: 100vh;
+  background-image: url(../Images/bg\ img.jpeg);
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
+  margin-top: 100px;
 }
 .navbar {
   width: 100%;
   height: 100px;
   color: whitesmoke;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(29, 28, 28);
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -67,7 +71,7 @@ html {
 .name {
   width: 100%;
   height: 85%;
-  color: whitesmoke;
+  color: rgba(0, 0, 0, 0.86);
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -91,16 +95,12 @@ html {
   height: 30%;
   display: flex;
   justify-content: space-evenly;
-}
-.Aboutpara {
-  width: 80%;
-  height: 100%;
   font-size: 16px;
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
   line-height: 30px;
-  margin-top: 50px;
+  padding: 20px;
+  padding-left: 250px;
+  padding-right: 250px;
+  margin-bottom: 50px;
 }
 .Aboutpara p {
   color: rgb(61, 61, 61);
@@ -117,18 +117,32 @@ video {
 .skills {
   width: 100%;
   height: 40%;
-  background-color: rgb(241, 241, 241);
+  background-color: rgb(207, 207, 207);
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 40px;
 }
 .skillsinner {
-  width: 80%;
-  height: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  width: 100%;
+  height: 82%;
+  display: grid;
+  grid-template-columns: repeat(8,20%);
   gap: 40px;
+  margin: 40px;
+  position: relative;
+  animation: scroll 20s linear infinite;
+}
+.skillsinner::-webkit-scrollbar{
+  display: none;
+}
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-25%); }
+  40% { transform: translateX(-50%); }
+  60% { transform: translateX(-80%); }
+  80% { transform: translateX(-40%); }
+  100% { transform: translateX(0%); } 
 }
 .skillsinner h3 {
   font-size: 18px;
@@ -144,6 +158,8 @@ video {
   line-height: 30px;
 }
 .pic {
+  width: 100%;
+  height: 100%;
   background-color: whitesmoke;
   padding: 30px;
   display: flex;
@@ -154,15 +170,15 @@ video {
 .pic span {
   width: 50px;
   height: 50px;
-  background-color: black;
+  background-color: rgb(207, 207, 207);
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 100%;
 }
-.pic span i {
-  font-size: 20px;
-  color: white;
+.pic span img {
+  width: 30px;
+  height: 30px;
 }
 .resume {
   width: 100%;
@@ -186,7 +202,7 @@ video {
   justify-content: center;
 }
 .education {
-  width: 40%;
+  width: 70%;
   height: 100%;
   line-height: 30px;
   display: flex;
@@ -485,17 +501,18 @@ video {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
-    font-family: "Poppins", sans-serif;
+    font-family: "Playfair Display", serif;
   }
   .bgimg {
-    width: auto;
-    height: 100%;
-    background-image: url(../Images/bg.jpg);
+    width: 100%;
+    height: 50%;
+    background-image: url(../Images/bg\ img.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
+    margin-top: 80px;
   }
   .navbarinner i {
     display: block;
@@ -558,11 +575,8 @@ video {
   .name {
     width: 100%;
     height: 85%;
-    color: whitesmoke;
+    color: rgba(0, 0, 0, 0.86);
     font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 30px;
   }
   .head {
@@ -574,7 +588,7 @@ video {
     align-items: center;
     justify-content: center;
     padding: 20px 20px 0px 20px;
-    padding-top: 120px;
+    padding-top: 20px;
   }
   .About {
     width: auto;
@@ -601,7 +615,7 @@ video {
   }
   video {
     position: absolute;
-    opacity: 0.2;
+    opacity: 0.3;
     top: 0;
     left: 0;
   }
@@ -617,11 +631,20 @@ video {
   .skillsinner {
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(8,70%);
+    margin: 40px;
     gap: 40px;
     flex-direction: column;
+    position: relative;
+    animation: scroll 20s linear infinite;
+  }
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-250%); }
+    50% { transform: translateX(-550%); }
+    75% { transform: translateX(-250%); }
+    100% { transform: translateX(0); }
   }
   .skillsinner h3 {
     font-size: 18px;
@@ -647,15 +670,15 @@ video {
   .pic span {
     width: 50px;
     height: 50px;
-    background-color: black;
+    background-color: rgb(207, 207, 207);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 100%;
   }
-  .pic span i {
-    font-size: 20px;
-    color: white;
+  .pic span img {
+    width: 30px;
+    height: 30px;
   }
   .resume {
     width: auto;
@@ -663,7 +686,7 @@ video {
     background-color: black;
     color: white;
     padding: 20px;
-    padding-top: 120px;
+    padding-top: 30px;
   }
   .resumeinner {
     width: 100%;
@@ -672,6 +695,7 @@ video {
     align-items: center;
     justify-content: center;
     font-size: 20px;
+    padding-bottom: 20px;
   }
   .resumecontent {
     width: 100%;
@@ -702,6 +726,7 @@ video {
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 30px;
   }
   .education2 {
     width: 100%;
@@ -719,7 +744,7 @@ video {
     justify-content: center;
     font-size: 25px;
     padding: 20px;
-    padding-top: 120px;
+    padding-top: 30px;
   }
   .buttons {
     width: auto;
@@ -799,7 +824,7 @@ video {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    padding-top: 120px;
+    padding-top: 30px;
   }
   .testimonial1 {
     width: 100%;
@@ -842,6 +867,7 @@ video {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
   }
   .blogsimg {
     width: 100%;
@@ -894,7 +920,7 @@ video {
     height: auto;
     background-color: rgb(241, 241, 241);
     padding: 20px;
-    padding-top: 120px;
+    padding-top: 30px;
   }
   .contactheading {
     width: 100%;

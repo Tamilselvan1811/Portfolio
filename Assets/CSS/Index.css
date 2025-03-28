@@ -410,13 +410,14 @@ video {
 }
 .contact1 {
   width: 80%;
-  height: 85%;
+  height: 95%;
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 80px;
   padding: 30px;
+  padding-bottom: 70px;
 }
 .mydetails {
   width: 20%;
